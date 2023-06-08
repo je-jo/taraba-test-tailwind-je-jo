@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create the QR code you need, brand it with your own colors & logo.">
+  <meta name="theme-color" content="hsl(31, 100%, 61%)">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon-32x32.png">
+  <link rel="stylesheet" href="public/styles/main.css">
+  <!-- <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/script.js" defer></script> -->
+  <title>Resend activation - Bolt</title>
+</head>
+
+<body class="page-inner">
+  <header>
+    <a href="index.html" class="header__logo">
+      <svg width="147" height="39" class="logo">
+        <use href="/public/img/bolt-logo.svg#bolt"></use>
+      </svg>
+    </a>
+    <nav aria-label="Main" id="mainnav" class="header__menu">
+      <!-- template for burger button -->
+      <template id="template-burger">
+        <button type="button" class="header__button header__button--menu" aria-expanded="false" aria-label="Menu"
+          aria-controls="mainnav">
+          <svg width="27" height="22" aria-hidden="true" class="icons-menu">
+            <use href="/public/img/home/menu-icon.svg#menu"></use>
+          </svg>
+        </button>
+      </template>
+      <!-- end -->
+      <ul id="mainnav-list" class="header__links">
+        <li><a href="#" class="nav-link">Generate QR Codes</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><span class="txt-orange txt-underline"><a href="login.html" class="nav-link">Log in</a></span></li>
+        <li><span class="btn btn--outline"><a href="signup.html" class="nav-link">Sign up</a></span></li>
+      </ul>
+      <!-- template for theme switcher button -->
+      <template id="template-theme">
+        <label for="theme" class="theme-checkbox">
+          <input type="checkbox" id="theme">
+          <svg width="22" height="28" aria-hidden="true" class="icons-menu">
+            <use href="/public/img/home/theme-icon.svg#theme"></use>
+          </svg>
+        </label>
+      </template>
+      <!-- end -->
+    </nav>
+  </header>
+
+
+  <main class="wrapper">
+    <div class="hero wrapper-grid flow">
+      <div class="wrapper-input">
+        <div class="flow--small">
+          <h1 class="h2 txt-orange">Resend activation email</h1>
+          <p>Mails can get lost, but we can send you another activation email for your account.</p>
+        </div>
+        <form action="" class="flow">
+          <label for="email"><span class="sr-only">Email</span><input type="email" id="email"
+              placeholder="Your email*"></label>
+          <button type="submit">Send activation</button>
+        </form>
+        <p><span class="txt-orange"><a href="login.html">Return to Login</a></span></p>
+      </div>
+      <div class="wrapper-illustration">
+        <img src="public/img/login/resend-activation-email-illustration.png"
+          alt="illustration of a woman entering password on a phone" width="548" height="548">
+        <!-- widths none, 445, 548 -->
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer>
+    <div class="footer__social">
+      <svg class="footer__social-logo" width="136" height="26" aria-hidden="true" focusable="false">
+        <use href="public/img/footer/taraba-logo-latin-full-color-white-1.svg#trblogo"></use>
+      </svg>
+      <ul class="footer__social-wrapper">
+        <li><a href="https://www.linkedin.com/company/taraba-tech/" target="_blank">
+            <svg class="icons-link" width="34" height="34">
+              <use href="public/img/footer/linked-in-large.svg#linkedin"></use>
+            </svg>
+          </a></li>
+        <li><a href="https://www.instagram.com/taraba.tech/" target="_blank">
+            <svg class="icons-link" width="34" height="34">
+              <use href="public/img/footer/instagram-large.svg#instagram"></use>
+            </svg>
+          </a></li>
+        <li><a href="https://www.youtube.com/channel/UCa9GoEPzrYQQMeFDQUUMjIA" target="_blank">
+            <svg class="icons-link" width="34" height="34">
+              <use href="public/img/footer/you-tube-large.svg#youtube"></use>
+            </svg>
+          </a></li>
+        <li><a href="https://www.facebook.com/taraba.technology" target="_blank">
+            <svg class="icons-link" width="34" height="34">
+              <use href="public/img/footer/facebook-large.svg#facebook"></use>
+            </svg>
+          </a></li>
+      </ul>
+    </div>
+    <nav aria-labelledby="bottomnav-title" id="bottomnav" class="footer__bottomnav">
+      <h2 id="bottomnav-title">Quick links</h2>
+      <div class="footer__bottomnav-list">
+        <div class="footer__bottomnav-list-section">
+          <a href="#">Generate QR Codes</a>
+          <a href="./index.html#pricing">Pricing</a>
+        </div>
+        <div class="footer__bottomnav-list-section">
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </nav>
+    <div class="footer__familylinks">
+      <h2 class="footer__familylinks-title">Our family</h2>
+      <div class="footer__familylinks-list">
+        <a href="https://taraba.tech/" target="_blank" class="btn btn--family"><img
+            src="public/img/footer/trb-tech-logo-solid-white.svg" alt="taraba.tech" width="102" height="16"></a>
+        <a href="https://taraba.education/" target="_blank" class="btn btn--family"><img
+            src="public/img/footer/trb-edu-logo-solid-white.svg" alt="taraba.edu" width="108" height="16"></a>
+        <a href="https://taraba.rs/" target="_blank" class="btn btn--family"><img
+            src="public/img/footer/portal-logo-lat-solid-white-1.svg" alt="taraba portal" width="90" height="16"></a>
+        <a href="https://oakly.events/" target="_blank" class="btn btn--family"><img
+            src="public/img/footer/oakly-logo-full-color-9.svg" alt="oakly" width="63" height="16"></a>
+      </div>
+    </div>
+    <p class="footer__copyright"><small>Copyright © 2022 Taraba. All rights reserved.</small></p>
+  </footer>
+</body>
+
+</html>

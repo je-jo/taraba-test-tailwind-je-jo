@@ -1,0 +1,39 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html",
+  "./src/**/*.{html,js}"],
+  theme: {
+    fontFamily: {
+      'sans': ['Roboto', 'system-ui', 'sans-serif'],
+    },
+    extend: {
+      fontFamily: {
+        'heading': ['Comfortaa', 'system-ui', 'sans-serif'],
+        'heading-bold': ['Taraba\\ Comfortaa', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        'trb-orange0': 'hsl(25, 100%, 28%)', // #913C00
+        'trb-orange1': 'hsl(28, 100%, 50%)', //#FF7800
+        'trb-orange3': 'hsl(31, 100%, 61%))', //#FFA039
+        'trb-orange4': 'hsl(31, 100%, 80%)', //#FFCF9B
+        'trb-black2': 'hsl(0, 0%, 18%)', //#2D2D2D
+        'trb-black3': 'hsl(0, 0%, 40%)', //#666666
+        'trb-black4': 'hsl(0, 0%, 60%)', //#999898
+        'trb-grey0': 'hsl(0, 0%, 31%)', //#505050;
+        'trb-grey1': 'hsl(0, 0%, 67%)', //#ABABAB
+        'trb-grey2': 'hsl(0, 0%, 84%)', //#D7D7D7
+        'trb-grey3': 'hsl(0, 0%, 90%)', //#E6E6E6;
+        'trb-grey4': 'hsl(0, 0%, 98%)', //#FAFAFA
+      },
+    },
+  },
+  plugins: [],
+}
+
+
+
+
+/* $orange-shadow: adjust-color($trb-orange0, $alpha: -0.75);
+$orange-bg: adjust-color($trb-orange4, $alpha: -0.9);
+$grey-bg: adjust-color($trb-grey2, $alpha: -0.8);
+$grey-bg2: adjust-color($trb-grey2, $alpha: -0.7); */
