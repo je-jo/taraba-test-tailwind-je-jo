@@ -56,10 +56,27 @@
     font-family: 'Taraba Comfortaa';
     font-style: normal;
     font-weight: 900;
-    src: url('..fonts/TarabaComfortaa-ExtraBold.woff2') format('woff2'),
+    src: url('../fonts/TarabaComfortaa-ExtraBold.woff2') format('woff2'),
         /* Chrome 36+, Opera 23+, Firefox 39+ */
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button {
+    @apply inline-flex items-center justify-center min-h-[44px] p-4 
+    font-heading text-sm 
+    rounded-2xl cursor-pointer;
+}
+
+.button--full {
+    @apply 
+    text-trb-grey4 bg-trb-orange3
+    shadow-[0_10px_20px_rgba(143,60,0,0.25),inset_-2px_-2px_10px_hsl(28,100%,50%)];
+}
+
+.button--outline {
+    @apply 
+    text-trb-orange3 bg-transparent outline outline-2 outline-current; 
+}
