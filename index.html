@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -13,14 +13,14 @@
     <title>QR code Generator - Bolt</title>
 </head>
 
-<body class="h-screen font-sans grid bg-trb-grey4 text-trb-black2">
-    <header>
-        <a href="#" class="header__logo">
-            <svg width="147" height="39" class="logo">
+<body class="h-screen grid bg-bg-color text-txt-color">
+    <header class="flex flex-col justify-between p-6 md:flex-row md:items-center">
+        <a href="#">
+            <svg width="147" height="39" class="w-[87px] md:w-auto">
                 <use href="/public/img/bolt-logo.svg#bolt"></use>
             </svg>
         </a>
-        <nav aria-label="Main" id="mainnav" class="header__menu">
+        <nav aria-label="Main" id="mainnav" class="flex flex-col md:flex-row md:items-center md:justify-end">
             <!-- template for burger button -->
             <template id="template-burger">
                 <button type="button" class="header__button header__button--menu" aria-expanded="false"
@@ -31,11 +31,11 @@
                 </button>
             </template>
             <!-- end -->
-            <ul id="mainnav-list" class="header__links">
-                <li><a href="#" class="nav-link">Generate QR Codes</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li><span class="txt-orange txt-underline"><a href="login.html" class="nav-link">Log in</a></span></li>
-                <li><span class="btn btn--outline"><a href="signup.html" class="nav-link">Sign up</a></span></li>
+            <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 font-heading text-para-txt-color ">
+                <li><a href="#" class="hover:text-black">Generate QR Codes</a></li>
+                <li><a href="#pricing" class="hover:text-black">Pricing</a></li>
+                <li><span class="text-trb-orange3 underline"><a href="login.html" class="hover:text-black">Log in</a></span></li>
+                <li><span class="button button--outline"><a href="signup.html" class="text-base hover:text-black">Sign up</a></span></li>
             </ul>
             <!-- template for theme switcher button -->
             <template id="template-theme">
@@ -49,7 +49,7 @@
             <!-- end -->
         </nav>
     </header>
-    <main>
+    <main class="">
         <div class="">
             <div class="">
                 <h1 class="font-heading-bold font-black text-5xl text-trb-orange3">Strikingly fast <span class="text-black">QR codes</span>.</h1>
@@ -404,7 +404,7 @@
 
         </section>
     </main>
-    <footer>
+    <footer class="hidden">
         <div class="footer__social">
             <svg class="footer__social-logo" width="136" height="26" aria-hidden="true" focusable="false">
                 <use href="public/img/footer/taraba-logo-latin-full-color-white-1.svg#trblogo"></use>

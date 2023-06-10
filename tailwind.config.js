@@ -1,15 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ["./index.html",
-  "./src/**/*.{html,js}"],
+    "./src/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      'sans': ['Roboto', 'system-ui', 'sans-serif'],
-    },
     extend: {
       fontFamily: {
-        'heading': ['Comfortaa', 'system-ui', 'sans-serif'],
-        'heading-bold': ['"Taraba Comfortaa"', 'system-ui', 'sans-serif'],
+        'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
+        'heading': ['Comfortaa', ...defaultTheme.fontFamily.sans],
+        'heading-bold': ['"Taraba Comfortaa"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         'trb-orange0': 'hsl(25, 100%, 28%)', // #913C00
@@ -24,6 +23,9 @@ module.exports = {
         'trb-grey2': 'hsl(0, 0%, 84%)', //#D7D7D7
         'trb-grey3': 'hsl(0, 0%, 90%)', //#E6E6E6;
         'trb-grey4': 'hsl(0, 0%, 98%)', //#FAFAFA
+        'bg-color': 'hsl(var(--bg-color) / <alpha-value>)',
+        'txt-color': 'hsl(var(--txt-color) / <alpha-value>)',
+        'para-txt-color': 'hsl(var(--para-txt-color) / <alpha-value>)',
       },
     },
   },

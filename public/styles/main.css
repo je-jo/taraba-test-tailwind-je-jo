@@ -89,7 +89,7 @@
 
   font-weight: 900;
 
-  src: url('../fonts/TarabaComfortaa-ExtraBold.woff2') format('woff2'),
+  src: url('../fonts/TarabaComfortaa-ExtraBold.woff2') format('woff2');
 
   /* Chrome 36+, Opera 23+, Firefox 39+ */
 }
@@ -138,7 +138,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Roboto, system-ui, sans-serif;
+  font-family: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -516,6 +516,13 @@ video {
   display: none;
 }
 
+:root,
+    :root.light {
+  --bg-color: 0 0% 98%;
+  --txt-color: 0 0% 18%;
+  --para-txt-color: 0 0% 40%;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -624,30 +631,68 @@ video {
   position: fixed;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.bg-trb-grey4 {
+.w-\[87px\] {
+  width: 87px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.bg-bg-color {
   --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
+  background-color: hsl(var(--bg-color) / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.font-heading {
+  font-family: Comfortaa, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-heading-bold {
-  font-family: "Taraba Comfortaa", system-ui, sans-serif;
-}
-
-.font-sans {
-  font-family: Roboto, system-ui, sans-serif;
+  font-family: "Taraba Comfortaa", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm {
@@ -664,9 +709,9 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-trb-black2 {
+.text-para-txt-color {
   --tw-text-opacity: 1;
-  color: hsl(0 0% 18% / var(--tw-text-opacity));
+  color: hsl(var(--para-txt-color) / var(--tw-text-opacity));
 }
 
 .text-trb-black3 {
@@ -679,6 +724,15 @@ video {
   color: hsl(31 100% 61% / var(--tw-text-opacity));
 }
 
+.text-txt-color {
+  --tw-text-opacity: 1;
+  color: hsl(var(--txt-color) / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
 .button {
   display: inline-flex;
   min-height: 44px;
@@ -687,26 +741,46 @@ video {
   justify-content: center;
   border-radius: 1rem;
   padding: 1rem;
-  font-family: Comfortaa, system-ui, sans-serif;
+  font-family: Comfortaa, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.button--full {
-  --tw-bg-opacity: 1;
-  background-color: hsl(31 100% 61% / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(0 0% 98% / var(--tw-text-opacity));
-  --tw-shadow: 0 10px 20px rgba(143,60,0,0.25),inset -2px -2px 10px hsl(28,100%,50%);
-  --tw-shadow-colored: 0 10px 20px var(--tw-shadow-color), inset -2px -2px 10px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
+/* .button--full {
+    @apply text-trb-grey4 bg-trb-orange3 shadow-[0_10px_20px_rgba(143,60,0,0.25),
+    inset_-2px_-2px_10px_hsl(28,100%,50%)];
+}  */
 
 .button--outline {
   background-color: transparent;
-  --tw-text-opacity: 1;
-  color: hsl(31 100% 61% / var(--tw-text-opacity));
   outline-style: solid;
   outline-width: 2px;
-  outline-color: currentColor;
+  outline-color: hsl(31, 100%, 61%);
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
 }
