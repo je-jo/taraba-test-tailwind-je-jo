@@ -13,9 +13,9 @@
   <title>Lost password - Bolt</title>
 </head>
 
-<body class="page-inner">
+<body class="h-screen grid bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4">
   <header class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
-    <a href="index.html#pricing">
+    <a href="index.html">
         <svg width="147" height="39" class="w-[87px] md:w-auto">
             <use href="/public/img/bolt-logo.svg#bolt"></use>
         </svg>
@@ -24,7 +24,7 @@
         <!-- template for burger button -->
         <template id="template-burger">
             <button type="button"
-                class="inline-flex items-center min-h-[44px] absolute top-6 right-6 md:hidden peer z-20"
+                class="inline-flex items-center min-h-[44px] absolute top-6 right-6 md:hidden peer z-20 hamburger"
                 aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
                 <svg width="27" height="22" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
                     <use href="/public/img/home/menu-icon.svg#menu"></use>
@@ -32,17 +32,17 @@
             </button>
         </template>
         <!-- end -->
-        <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 peer-[.peer]:md:mr-12 font-heading text-sm xl:text-lg text-trb-black3 dark:text-trb-grey3 bg-trb-grey4 dark:bg-trb-black2
-        peer-[.peer]:max-md:fixed  
-        peer-[.peer]:max-md:-right-full
+        <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 peer-[.hamburger]:md:mr-12 font-heading text-sm xl:text-lg text-trb-black3 dark:text-trb-grey3 bg-trb-grey4 dark:bg-trb-black2
+        peer-[.hamburger]:max-md:fixed  
+        peer-[.hamburger]:max-md:-right-full
         peer-aria-expanded:max-md:top-0 peer-aria-expanded:max-md:right-0
-        peer-[.peer]:max-md:w-0 peer-[.peer]:max-md:h-0
+        peer-[.hamburger]:max-md:w-0 peer-[.hamburger]:max-md:h-0
         peer-aria-expanded:max-md:w-[187px] peer-aria-expanded:max-md:h-screen
-        peer-[.peer]:max-md:p-0 
+        peer-[.hamburger]:max-md:p-0 
         peer-aria-expanded:max-md:py-32 peer-aria-expanded:max-md:px-6
         peer-aria-expanded:max-md:gap-7 
         transition-[right] ease duration-500
-        peer-[.peer]:text-lg peer-[.peer]:md:text-sm peer-[.peer]:xl:text-lg
+        peer-[.hamburger]:text-lg peer-[.hamburger]:md:text-sm peer-[.hamburger]:xl:text-lg
         peer-aria-expanded:max-md:z-10
         ">
             <li><a href="#" class="hover:text-black">Generate QR Codes</a></li>
@@ -66,7 +66,7 @@
     </nav>
 </header>
 
-  <main class="wrapper">
+  <main class="max-w-screen-xl mx-auto pt-8 pb-12 px-[2.5%] md:py-20">
     <div class="hero wrapper-grid flow">
       <div class="wrapper-input">
         <div class="flow--small">
@@ -80,9 +80,9 @@
         </form>
         <p><span class="txt-orange"><a href="login.html">Return to Login</a></span></p>
       </div>
-      <div class="wrapper-illustration">
+      <div class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-trb-orange1 after:mix-blend-hue">
         <img src="public/img/login/lost-password-illustration.png"
-        alt="illustration of a woman trying to remember her password" width="505" height="505">
+        alt="illustration of a woman trying to remember her password" width="505" height="505" class="max-md:hidden dark:invert">
             <!-- widths none, 445, 505 -->
       </div>
     </div>
