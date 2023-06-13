@@ -67,18 +67,18 @@
 </header>
 
   <main class="max-w-screen-xl mx-auto pt-8 pb-12 px-[2.5%] md:py-20">
-    <div class="hero wrapper-grid flow">
-      <div class="wrapper-input">
-        <div class="flow--small">
-          <h1 class="h2 txt-orange">Lost password</h1>
-          <p>We will send you an email with a magic recovery link to reset your password.</p>
+    <div class="w-full max-w-4xl xl:max-w-7xl grid items-center gap-8 md:grid-cols-2 [&>*+*]:mt-6">
+      <div class="max-w-md">
+        <div class="[&>*+*]:mt-2">
+          <h1 class="text-4xl xl:text-5xl font-heading-bold font-black text-trb-orange3 dark:text-trb-orange1">Lost password</h1>
+          <p class="text-sm xl:text-lg max-w-[45ch] text-trb-black3 dark:text-trb-grey3">We will send you an email with a magic recovery link to reset your password.</p>
         </div>
-        <form action="" class="flow">
+        <form action="" class="grid mt-6 mb-8 [&>*+*]:mt-6">
           <label for="email"><span class="sr-only">Email</span><input type="email" id="email"
               placeholder="Your email*"></label>
-          <button type="submit">Send link</button>
+          <button type="submit" class="button button--full">Send link</button>
         </form>
-        <p><span class="txt-orange"><a href="login.html">Return to Login</a></span></p>
+        <p><span class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a href="login.html">Return to Login</a></span></p>
       </div>
       <div class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-trb-orange1 after:mix-blend-hue">
         <img src="public/img/login/lost-password-illustration.png"

@@ -14,25 +14,26 @@
 </head>
 
 <body class="h-screen grid bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4">
-  <header class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
+  <header
+    class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
     <a href="index.html">
-        <svg width="147" height="39" class="w-[87px] md:w-auto">
-            <use href="/public/img/bolt-logo.svg#bolt"></use>
-        </svg>
+      <svg width="147" height="39" class="w-[87px] md:w-auto">
+        <use href="/public/img/bolt-logo.svg#bolt"></use>
+      </svg>
     </a>
     <nav aria-label="Main" id="mainnav" class="flex flex-col md:flex-row md:items-center md:justify-end">
-        <!-- template for burger button -->
-        <template id="template-burger">
-            <button type="button"
-                class="inline-flex items-center min-h-[44px] absolute top-6 right-6 md:hidden peer z-20 hamburger"
-                aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
-                <svg width="27" height="22" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
-                    <use href="/public/img/home/menu-icon.svg#menu"></use>
-                </svg>
-            </button>
-        </template>
-        <!-- end -->
-        <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 peer-[.hamburger]:md:mr-12 font-heading text-sm xl:text-lg text-trb-black3 dark:text-trb-grey3 bg-trb-grey4 dark:bg-trb-black2
+      <!-- template for burger button -->
+      <template id="template-burger">
+        <button type="button"
+          class="inline-flex items-center min-h-[44px] absolute top-6 right-6 md:hidden peer z-20 hamburger"
+          aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+          <svg width="27" height="22" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
+            <use href="/public/img/home/menu-icon.svg#menu"></use>
+          </svg>
+        </button>
+      </template>
+      <!-- end -->
+      <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 peer-[.hamburger]:md:mr-12 font-heading text-sm xl:text-lg text-trb-black3 dark:text-trb-grey3 bg-trb-grey4 dark:bg-trb-black2
         peer-[.hamburger]:max-md:fixed  
         peer-[.hamburger]:max-md:-right-full
         peer-aria-expanded:max-md:top-0 peer-aria-expanded:max-md:right-0
@@ -45,36 +46,39 @@
         peer-[.hamburger]:text-lg peer-[.hamburger]:md:text-sm peer-[.hamburger]:xl:text-lg
         peer-aria-expanded:max-md:z-10
         ">
-            <li><a href="#" class="hover:text-black">Generate QR Codes</a></li>
-            <li><a href="#pricing" class="hover:text-black">Pricing</a></li>
-            <li><span class="text-trb-orange3 underline"><a href="#" class="hover:text-black">Log
-                        in</a></span></li>
-            <li><span class="button button--outline"><a href="signup.html"
-                        class="text-sm xl:text-lg hover:text-black">Sign up</a></span></li>
-        </ul>
-        <!-- template for theme switcher button -->
-        <template id="template-theme">
-            <label for="theme"
-                class="inline-flex items-center min-h-[44px] absolute top-6 right-24 md:top-auto md:right-6">
-                <input type="checkbox" id="theme" class="appearance-none">
-                <svg width="22" height="28" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
-                    <use href="/public/img/home/theme-icon.svg#theme"></use>
-                </svg>
-            </label>
-        </template>
-        <!-- end -->
+        <li><a href="#" class="hover:text-black">Generate QR Codes</a></li>
+        <li><a href="#pricing" class="hover:text-black">Pricing</a></li>
+        <li><span class="text-trb-orange3 underline"><a href="#" class="hover:text-black">Log
+              in</a></span></li>
+        <li><span class="button button--outline"><a href="signup.html" class="text-sm xl:text-lg hover:text-black">Sign
+              up</a></span></li>
+      </ul>
+      <!-- template for theme switcher button -->
+      <template id="template-theme">
+        <label for="theme" class="inline-flex items-center min-h-[44px] absolute top-6 right-24 md:top-auto md:right-6">
+          <input type="checkbox" id="theme" class="appearance-none">
+          <svg width="22" height="28" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
+            <use href="/public/img/home/theme-icon.svg#theme"></use>
+          </svg>
+        </label>
+      </template>
+      <!-- end -->
     </nav>
-</header>
+  </header>
 
   <main class="max-w-screen-xl mx-auto pt-8 pb-12 px-[2.5%] md:py-20">
-    <div class="hero wrapper-grid flow">
-      <div class="wrapper-input">
-        <div class="flow--small">
-          <h1 class="h2 txt-orange">Log in</h1>
-          <p>Welcome back to you Bolt account, it's good to see you again!</p>
+    <div class="w-full max-w-4xl xl:max-w-7xl grid items-center gap-8 md:grid-cols-2 [&>*+*]:mt-6">
+
+      <div class="max-w-md">
+
+        <div class="[&>*+*]:mt-2">
+          <h1 class="text-4xl xl:text-5xl font-heading-bold font-black text-trb-orange3 dark:text-trb-orange1">Log in
+          </h1>
+          <p class="text-sm xl:text-lg max-w-[45ch] text-trb-black3 dark:text-trb-grey3">Welcome back to you Bolt account, it's good
+            to see you again!</p>
         </div>
 
-        <form action="" class="flow">
+        <form action="" class="grid mt-6 mb-8 [&>*+*]:mt-6">
           <label for="email"><span class="sr-only">Email</span><input type="email" id="email"
               placeholder="Your email*"></label>
           <label for="password"><span class="sr-only">Password</span><input type="password" id="password"
@@ -83,19 +87,29 @@
             <input type="checkbox" id="remember" class="checkbox">
             Remember me
           </label>
-          <button type="submit">Log in</button>
+          <button type="submit" class="button button--full">Log in</button>
         </form>
-        <div class="flow--small">
-          <p><span class="txt-orange"><a href="lost.html">Lost Password</a></span>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="txt-orange"><a href="resend.html">Resend Activation</a></span></p>
-          <p>You don’t have an account? <span class="txt-orange"><a href="signup.html">Sign up</a></span></p>
+
+        <div class="[&>*+*]:mt-2">
+          <p><span class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a
+                href="lost.html">Lost Password</a></span>&nbsp;&nbsp;/&nbsp;&nbsp;<span
+              class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a
+                href="resend.html">Resend Activation</a></span></p>
+          <p>You don’t have an account? <span
+              class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a
+                href="signup.html">Sign up</a></span></p>
         </div>
+
       </div>
-      <div class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-trb-orange1 after:mix-blend-hue">
+
+      <div
+        class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-trb-orange1 after:mix-blend-hue">
         <img src="public/img/login/log-in-illustration.png"
           alt="illustration of a woman unlocking a lock on the phone with a giant key" width="498" height="498"
           class="max-md:hidden dark:invert">
         <!-- widths none, 443, 498 -->
       </div>
+
     </div>
   </main>
 

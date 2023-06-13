@@ -80,7 +80,7 @@
 
 @layer base {
     .button {
-        @apply inline-flex items-center justify-center min-h-[44px] p-4 font-heading text-sm rounded-2xl cursor-pointer;
+        @apply inline-flex items-center justify-center w-full max-w-[198px] min-h-[44px] p-4 font-heading text-sm rounded-2xl cursor-pointer;
     } 
     
     .button--full {
