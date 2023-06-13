@@ -8,47 +8,63 @@
   <meta name="theme-color" content="hsl(31, 100%, 61%)">
   <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon-32x32.png">
   <link rel="stylesheet" href="public/styles/main.css">
-  <!-- <script src="assets/js/theme-toggle.js"></script>
-  <script src="assets/js/script.js" defer></script> -->
+  <script src="src/js/theme-toggle.js"></script>
+  <script src="src/js/script.js" defer></script>
   <title>Sign in - Bolt</title>
 </head>
 
-<body class="page-inner">
-  <header>
-    <a href="index.html" class="header__logo">
-      <svg width="147" height="39" class="logo">
-        <use href="/public/img/bolt-logo.svg#bolt"></use>
-      </svg>
+<body class="h-screen grid bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4">
+  <header class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
+    <a href="index.html">
+        <svg width="147" height="39" class="w-[87px] md:w-auto">
+            <use href="/public/img/bolt-logo.svg#bolt"></use>
+        </svg>
     </a>
-    <nav aria-label="Main" id="mainnav" class="header__menu">
-      <!-- template for burger button -->
-      <template id="template-burger">
-        <button type="button" class="header__button header__button--menu" aria-expanded="false" aria-label="Menu"
-          aria-controls="mainnav">
-          <svg width="27" height="22" aria-hidden="true" class="icons-menu">
-            <use href="/public/img/home/menu-icon.svg#menu"></use>
-          </svg>
-        </button>
-      </template>
-      <!-- end -->
-      <ul id="mainnav-list" class="header__links">
-        <li><a href="#" class="nav-link">Generate QR Codes</a></li>
-        <li><a href="#pricing" class="nav-link">Pricing</a></li>
-        <li><span class="txt-orange txt-underline"><a href="#" class="nav-link">Log in</a></span></li>
-        <li><span class="btn btn--outline"><a href="signup.html" class="nav-link">Sign up</a></span></li>
-      </ul>
-      <!-- template for theme switcher button -->
-      <template id="template-theme">
-        <label for="theme" class="theme-checkbox">
-          <input type="checkbox" id="theme">
-          <svg width="22" height="28" aria-hidden="true" class="icons-menu">
-            <use href="/public/img/home/theme-icon.svg#theme"></use>
-          </svg>
-        </label>
-      </template>
-      <!-- end -->
+    <nav aria-label="Main" id="mainnav" class="flex flex-col md:flex-row md:items-center md:justify-end">
+        <!-- template for burger button -->
+        <template id="template-burger">
+            <button type="button"
+                class="inline-flex items-center min-h-[44px] absolute top-6 right-6 md:hidden peer z-20"
+                aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+                <svg width="27" height="22" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
+                    <use href="/public/img/home/menu-icon.svg#menu"></use>
+                </svg>
+            </button>
+        </template>
+        <!-- end -->
+        <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 peer-[.peer]:md:mr-12 font-heading text-sm xl:text-lg text-trb-black3 dark:text-trb-grey3 bg-trb-grey4 dark:bg-trb-black2
+        peer-[.peer]:max-md:fixed  
+        peer-[.peer]:max-md:-right-full
+        peer-aria-expanded:max-md:top-0 peer-aria-expanded:max-md:right-0
+        peer-[.peer]:max-md:w-0 peer-[.peer]:max-md:h-0
+        peer-aria-expanded:max-md:w-[187px] peer-aria-expanded:max-md:h-screen
+        peer-[.peer]:max-md:p-0 
+        peer-aria-expanded:max-md:py-32 peer-aria-expanded:max-md:px-6
+        peer-aria-expanded:max-md:gap-7 
+        transition-[right] ease duration-500
+        peer-[.peer]:text-lg peer-[.peer]:md:text-sm peer-[.peer]:xl:text-lg
+        peer-aria-expanded:max-md:z-10
+        ">
+            <li><a href="#" class="hover:text-black">Generate QR Codes</a></li>
+            <li><a href="index.html#pricing" class="hover:text-black">Pricing</a></li>
+            <li><span class="text-trb-orange3 underline"><a href="#" class="hover:text-black">Log
+                        in</a></span></li>
+            <li><span class="button button--outline"><a href="signup.html"
+                        class="text-sm xl:text-lg hover:text-black">Sign up</a></span></li>
+        </ul>
+        <!-- template for theme switcher button -->
+        <template id="template-theme">
+            <label for="theme"
+                class="inline-flex items-center min-h-[44px] absolute top-6 right-24 md:top-auto md:right-6">
+                <input type="checkbox" id="theme" class="appearance-none">
+                <svg width="22" height="28" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
+                    <use href="/public/img/home/theme-icon.svg#theme"></use>
+                </svg>
+            </label>
+        </template>
+        <!-- end -->
     </nav>
-  </header>
+</header>
 
   <main class="wrapper">
     <div class="hero wrapper-grid flow">

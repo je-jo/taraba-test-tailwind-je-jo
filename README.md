@@ -1,4 +1,4 @@
-# Zadatak za Taraba Tech - Frontend Developer (CSS) - Intern position - Jelena Jovičić
+# Zadatak za Taraba Tech - Tailwind CSS - Frontend Developer (CSS) - Intern position - Jelena Jovičić
 
 ### Linkovi
 

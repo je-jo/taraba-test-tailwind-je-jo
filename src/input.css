@@ -64,7 +64,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
     :root,
     :root.light {
         --bg-color: 0 0% 98%;
@@ -76,15 +76,15 @@
         --txt-color: 0 0% 98%;
         --para-txt-color: 0 0% 90%;
     }
-}
+} */
 
 .button {
     @apply inline-flex items-center justify-center min-h-[44px] p-4 font-heading text-sm rounded-2xl cursor-pointer;
-}
-/* .button--full {
-    @apply text-trb-grey4 bg-trb-orange3 shadow-[0_10px_20px_rgba(143,60,0,0.25),
-    inset_-2px_-2px_10px_hsl(28,100%,50%)];
-}  */
+} 
+
+.button--full {
+    @apply text-trb-grey4 bg-trb-orange3 shadow-[0_10px_20px_rgba(143,60,0,0.25),inset_-2px_-2px_10px_hsl(28,100%,50%)];
+} 
 
 .button--outline {
     @apply bg-transparent outline outline-2 outline-trb-orange3;

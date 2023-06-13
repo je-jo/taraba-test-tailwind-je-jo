@@ -8,13 +8,18 @@
     <meta name="theme-color" content="hsl(31, 100%, 61%)">
     <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon-32x32.png">
     <link rel="stylesheet" href="public/styles/main.css">
-    <!-- <script src="assets/js/theme-toggle.js"></script>
-    <script src="assets/js/script.js" defer></script> -->
+    <script src="src/js/theme-toggle.js"></script>
+    <script src="src/js/script.js" defer></script>
     <title>QR code Generator - Bolt</title>
+    <!-- <style>
+        * {
+            outline: 1px solid red;
+        }
+    </style> -->
 </head>
 
-<body class="h-screen grid bg-bg-color text-txt-color">
-    <header class="flex flex-col justify-between p-6 md:flex-row md:items-center">
+<body class="h-screen grid bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4">
+    <header class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
         <a href="#">
             <svg width="147" height="39" class="w-[87px] md:w-auto">
                 <use href="/public/img/bolt-logo.svg#bolt"></use>
@@ -23,25 +28,41 @@
         <nav aria-label="Main" id="mainnav" class="flex flex-col md:flex-row md:items-center md:justify-end">
             <!-- template for burger button -->
             <template id="template-burger">
-                <button type="button" class="header__button header__button--menu" aria-expanded="false"
-                    aria-label="Menu" aria-controls="mainnav">
-                    <svg width="27" height="22" aria-hidden="true" class="icons-menu">
+                <button type="button"
+                    class="inline-flex items-center min-h-[44px] absolute top-6 right-6 md:hidden peer z-20 hamburger"
+                    aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+                    <svg width="27" height="22" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
                         <use href="/public/img/home/menu-icon.svg#menu"></use>
                     </svg>
                 </button>
             </template>
             <!-- end -->
-            <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 font-heading text-para-txt-color ">
+            <ul id="mainnav-list" class="flex flex-col md:flex-row md:items-center md:justify-end py-4 gap-4 md:p-0 peer-[.hamburger]:md:mr-12 font-heading text-sm xl:text-lg text-trb-black3 dark:text-trb-grey3 bg-trb-grey4 dark:bg-trb-black2
+            peer-[.hamburger]:max-md:fixed  
+            peer-[.hamburger]:max-md:-right-full
+            peer-aria-expanded:max-md:top-0 peer-aria-expanded:max-md:right-0
+            peer-[.hamburger]:max-md:w-0 peer-[.hamburger]:max-md:h-0
+            peer-aria-expanded:max-md:w-[187px] peer-aria-expanded:max-md:h-screen
+            peer-[.hamburger]:max-md:p-0 
+            peer-aria-expanded:max-md:py-32 peer-aria-expanded:max-md:px-6
+            peer-aria-expanded:max-md:gap-7 
+            transition-[right] ease duration-500
+            peer-[.hamburger]:text-lg peer-[.hamburger]:md:text-sm peer-[.hamburger]:xl:text-lg
+            peer-aria-expanded:max-md:z-10
+            ">
                 <li><a href="#" class="hover:text-black">Generate QR Codes</a></li>
                 <li><a href="#pricing" class="hover:text-black">Pricing</a></li>
-                <li><span class="text-trb-orange3 underline"><a href="login.html" class="hover:text-black">Log in</a></span></li>
-                <li><span class="button button--outline"><a href="signup.html" class="text-base hover:text-black">Sign up</a></span></li>
+                <li><span class="text-trb-orange3 underline"><a href="login.html" class="hover:text-black">Log
+                            in</a></span></li>
+                <li><span class="button button--outline"><a href="signup.html"
+                            class="text-sm xl:text-lg hover:text-black">Sign up</a></span></li>
             </ul>
             <!-- template for theme switcher button -->
             <template id="template-theme">
-                <label for="theme" class="theme-checkbox">
-                    <input type="checkbox" id="theme">
-                    <svg width="22" height="28" aria-hidden="true" class="icons-menu">
+                <label for="theme"
+                    class="inline-flex items-center min-h-[44px] absolute top-6 right-24 md:top-auto md:right-6">
+                    <input type="checkbox" id="theme" class="appearance-none">
+                    <svg width="22" height="28" aria-hidden="true" class="text-trb-black2 dark:text-trb-grey4">
                         <use href="/public/img/home/theme-icon.svg#theme"></use>
                     </svg>
                 </label>
@@ -52,7 +73,8 @@
     <main class="">
         <div class="">
             <div class="">
-                <h1 class="font-heading-bold font-black text-5xl text-trb-orange3">Strikingly fast <span class="text-black">QR codes</span>.</h1>
+                <h1 class="font-heading-bold font-black text-5xl text-trb-orange3">Strikingly fast <span
+                        class="text-black">QR codes</span>.</h1>
                 <p class="text-sm text-trb-black3">You are one Bolt away from never being too slow again</p>
                 <div class="">
                     <a href="#" class="button button--full">Generate QR Codes</a>
@@ -60,8 +82,8 @@
                 </div>
             </div>
             <div class="wrapper-illustration">
-                <img src="public/img/home/qr-code-purchase.png"
-                    alt="illustration of a man scanning qr code on a bottle" width="600" height="600">
+                <img src="public/img/home/qr-code-purchase.png" alt="illustration of a man scanning qr code on a bottle"
+                    width="600" height="600">
             </div>
             <!-- widths 217, 382, 600 -->
         </div>
@@ -98,7 +120,7 @@
                             <li>Country, device & language re-targeting</li>
                         </ul>
                     </div>
-                    <iframe width="660" height="393" src="https://www.youtube.com/embed/VWvkhPFKSxY" loading="lazy" 
+                    <iframe width="660" height="393" src="https://www.youtube.com/embed/VWvkhPFKSxY" loading="lazy"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
