@@ -91,4 +91,8 @@
     .button--outline {
         @apply bg-transparent outline outline-2 outline-trb-orange3 hover:outline-trb-orange1 transition-all;
     }
+
+    .input {
+        @apply w-full p-4 font-heading text-sm font-light bg-trb-grey4 border border-trb-grey1 rounded-2xl xl:text-lg leading-5
+    }
 }

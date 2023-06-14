@@ -1,6 +1,6 @@
 // form validation
 
-const form = document.querySelector(".form-signup")
+const form = document.querySelector("#form-signup")
 const termsCheck = document.querySelector("#terms");
 
 form.addEventListener("submit", (e) => {

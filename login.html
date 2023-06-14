@@ -13,9 +13,10 @@
   <title>Sign in - Bolt</title>
 </head>
 
-<body class="h-screen grid bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4">
+<body class="h-screen grid  text-trb-black2 dark:text-trb-grey4 bg-trb-orange4 bg-opacity-10 dark:bg-trb-grey0">
+  <!-- bg-trb-orange4 bg-opacity-10 dark:bg-trb-grey0 -->
   <header
-    class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
+    class="flex flex-col justify-between p-6 md:flex-row md:items-center bg-trb-grey4 dark:bg-trb-black2 shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
     <a href="index.html">
       <svg width="147" height="39" class="w-[87px] md:w-auto">
         <use href="/public/img/bolt-logo.svg#bolt"></use>
@@ -72,38 +73,38 @@
       <div class="max-w-md">
 
         <div class="[&>*+*]:mt-2">
-          <h1 class="text-4xl xl:text-5xl font-heading-bold font-black text-trb-orange3 dark:text-trb-orange1">Log in
+          <h1 class="text-4xl xl:text-5xl font-heading-bold font-black text-trb-orange3">Log in
           </h1>
           <p class="text-sm xl:text-lg max-w-[45ch] text-trb-black3 dark:text-trb-grey3">Welcome back to you Bolt account, it's good
             to see you again!</p>
         </div>
-
         <form action="" class="grid mt-6 mb-8 [&>*+*]:mt-6">
           <label for="email"><span class="sr-only">Email</span><input type="email" id="email"
-              placeholder="Your email*"></label>
+              placeholder="Your email*" class="input"></label>
           <label for="password"><span class="sr-only">Password</span><input type="password" id="password"
-              placeholder="Your password*"></label>
-          <label for="remember" class="label-checkbox">
-            <input type="checkbox" id="remember" class="checkbox">
+              placeholder="Your password*" class="input"></label>
+          <label for="remember" class="grid grid-cols-[auto_1fr] gap-2 text-sm text-trb-black3 dark:text-trb-grey3">
+            <input type="checkbox" id="remember" class="appearance-none w-6 h-6 border-2 bg-trb-grey4 border-trb-black3 dark:border-trb-grey3 rounded-md 
+            checked:bg-trb-orange1">
             Remember me
           </label>
           <button type="submit" class="button button--full">Log in</button>
         </form>
 
         <div class="[&>*+*]:mt-2">
-          <p><span class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a
+          <p><span class="text-trb-orange3 hover:text-trb-orange1"><a
                 href="lost.html">Lost Password</a></span>&nbsp;&nbsp;/&nbsp;&nbsp;<span
-              class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a
+              class="text-trb-orange3 hover:text-trb-orange1"><a
                 href="resend.html">Resend Activation</a></span></p>
           <p>You don’t have an account? <span
-              class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a
+              class="text-trb-orange3 hover:text-trb-orange1"><a
                 href="signup.html">Sign up</a></span></p>
         </div>
 
       </div>
 
       <div
-        class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-trb-orange1 after:mix-blend-hue">
+        class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 dark:after:bg-trb-orange1 dark:after:mix-blend-hue">
         <img src="public/img/login/log-in-illustration.png"
           alt="illustration of a woman unlocking a lock on the phone with a giant key" width="498" height="498"
           class="max-md:hidden dark:invert">

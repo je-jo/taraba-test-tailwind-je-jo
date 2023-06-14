@@ -13,8 +13,8 @@
   <title>Lost password - Bolt</title>
 </head>
 
-<body class="h-screen grid bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4">
-  <header class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
+<body class="h-screen grid text-trb-black2 dark:text-trb-grey4 bg-trb-orange4 bg-opacity-10 dark:bg-trb-grey0">
+  <header class="flex flex-col justify-between p-6 md:flex-row md:items-center bg-trb-grey4 dark:bg-trb-black2 shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
     <a href="index.html">
         <svg width="147" height="39" class="w-[87px] md:w-auto">
             <use href="/public/img/bolt-logo.svg#bolt"></use>
@@ -70,17 +70,17 @@
     <div class="w-full max-w-4xl xl:max-w-7xl grid items-center gap-8 md:grid-cols-2 [&>*+*]:mt-6">
       <div class="max-w-md">
         <div class="[&>*+*]:mt-2">
-          <h1 class="text-4xl xl:text-5xl font-heading-bold font-black text-trb-orange3 dark:text-trb-orange1">Lost password</h1>
+          <h1 class="text-4xl xl:text-5xl font-heading-bold font-black text-trb-orange3">Lost password</h1>
           <p class="text-sm xl:text-lg max-w-[45ch] text-trb-black3 dark:text-trb-grey3">We will send you an email with a magic recovery link to reset your password.</p>
         </div>
         <form action="" class="grid mt-6 mb-8 [&>*+*]:mt-6">
           <label for="email"><span class="sr-only">Email</span><input type="email" id="email"
-              placeholder="Your email*"></label>
+              placeholder="Your email*" class="input"></label>
           <button type="submit" class="button button--full">Send link</button>
         </form>
-        <p><span class="text-trb-orange3 dark:text-trb-orange1 hover:text-trb-orange1 dark:hover:text-trb-orange3"><a href="login.html">Return to Login</a></span></p>
+        <p><span class="text-trb-orange3 hover:text-trb-orange1"><a href="login.html">Return to Login</a></span></p>
       </div>
-      <div class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-trb-orange1 after:mix-blend-hue">
+      <div class="relative after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 dark:after:bg-trb-orange1 dark:after:mix-blend-hue">
         <img src="public/img/login/lost-password-illustration.png"
         alt="illustration of a woman trying to remember her password" width="505" height="505" class="max-md:hidden dark:invert">
             <!-- widths none, 445, 505 -->
