@@ -92,6 +92,10 @@
         @apply bg-transparent outline outline-2 outline-trb-orange3 hover:outline-trb-orange1 transition-all;
     }
 
+    .button--family {
+        @apply max-w-[137px] py-2 px-4 bg-trb-grey4 shadow-[0px_0px_30px_rgba(0,0,0,0.16)] rounded-lg;
+    }
+
     .input {
         @apply w-full p-4 font-heading text-sm font-light bg-trb-grey4 border border-trb-grey1 rounded-2xl xl:text-lg leading-5
     }
