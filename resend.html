@@ -91,62 +91,65 @@
 
 
   </main>
-  <footer>
-    <div class="footer__social">
-      <svg class="footer__social-logo" width="136" height="26" aria-hidden="true" focusable="false">
-        <use href="public/img/footer/taraba-logo-latin-full-color-white-1.svg#trblogo"></use>
-      </svg>
-      <ul class="footer__social-wrapper">
-        <li><a href="https://www.linkedin.com/company/taraba-tech/" target="_blank">
-            <svg class="icons-link" width="34" height="34">
-              <use href="public/img/footer/linked-in-large.svg#linkedin"></use>
-            </svg>
-          </a></li>
-        <li><a href="https://www.instagram.com/taraba.tech/" target="_blank">
-            <svg class="icons-link" width="34" height="34">
-              <use href="public/img/footer/instagram-large.svg#instagram"></use>
-            </svg>
-          </a></li>
-        <li><a href="https://www.youtube.com/channel/UCa9GoEPzrYQQMeFDQUUMjIA" target="_blank">
-            <svg class="icons-link" width="34" height="34">
-              <use href="public/img/footer/you-tube-large.svg#youtube"></use>
-            </svg>
-          </a></li>
-        <li><a href="https://www.facebook.com/taraba.technology" target="_blank">
-            <svg class="icons-link" width="34" height="34">
-              <use href="public/img/footer/facebook-large.svg#facebook"></use>
-            </svg>
-          </a></li>
-      </ul>
+  <footer class="grid max-md:pt-11 max-md:text-center items-end gap-7 bg-white dark:bg-trb-black3 md:grid-cols-[1fr_2fr_auto] md:grid-rows-[1fr_auto] md:pl-10">
+    <div class="grid justify-center md:justify-start self-center gap-4">
+        <svg class="max-md:max-w-[99px] max-md:justify-self-center" width="136" height="26" aria-hidden="true" focusable="false">
+            <use href="public/img/footer/taraba-logo-latin-full-color-white-1.svg#trblogo"></use>
+        </svg>
+        <ul class="grid grid-cols-[repeat(4,22.68px)] gap-2 text-trb-orange3 ">
+            <li><a href="https://www.linkedin.com/company/taraba-tech/" target="_blank" class="hover:text-trb-orange1">
+                    <svg width="34" height="34" class="w-full h-full">
+                        <use href="public/img/footer/linked-in-large.svg#linkedin"></use>
+                    </svg>
+                </a></li>
+            <li><a href="https://www.instagram.com/taraba.tech/" target="_blank" class="hover:text-trb-orange1">
+                    <svg width="34" height="34" class="w-full h-full">
+                        <use href="public/img/footer/instagram-large.svg#instagram"></use>
+                    </svg>
+                </a></li>
+            <li><a href="https://www.youtube.com/channel/UCa9GoEPzrYQQMeFDQUUMjIA" target="_blank" class="hover:text-trb-orange1">
+                    <svg width="34" height="34" class="w-full h-full">
+                        <use href="public/img/footer/you-tube-large.svg#youtube"></use>
+                    </svg>
+                </a></li>
+            <li><a href="https://www.facebook.com/taraba.technology" target="_blank" class="hover:text-trb-orange1">
+                    <svg width="34" height="34" class="w-full h-full">
+                        <use href="public/img/footer/facebook-large.svg#facebook"></use>
+                    </svg>
+                </a></li>
+        </ul>
     </div>
-    <nav aria-labelledby="bottomnav-title" id="bottomnav" class="footer__bottomnav">
-      <h2 id="bottomnav-title">Quick links</h2>
-      <div class="footer__bottomnav-list">
-        <div class="footer__bottomnav-list-section">
-          <a href="#">Generate QR Codes</a>
-          <a href="./index.html#pricing">Pricing</a>
+    <nav aria-labelledby="bottomnav-title" id="bottomnav" class="grid gap-6 md:row-span-2 font-heading text-sm xl:text-base">
+        <h2 id="bottomnav-title" class="font-bold">Quick links</h2>
+        <div class="grid gap-8 ">
+            <div class="grid gap-4 md:gap-2 underline">
+                <a href="#" class="hover:text-black">Generate QR Codes</a>
+                <a href="index.html#pricing" class="hover:text-black">Pricing</a>
+            </div>
+            <div class="grid gap-4 md:gap-2 text-trb-orange3 md:grid-cols-2 md:pb-4 underline decoration-current">
+                <a href="#" class="hover:text-trb-orange1">Terms and Conditions</a>
+                <a href="#" class="hover:text-trb-orange1">Privacy Policy</a>
+            </div>
         </div>
-        <div class="footer__bottomnav-list-section">
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
     </nav>
-    <div class="footer__familylinks">
-      <h2 class="footer__familylinks-title">Our family</h2>
-      <div class="footer__familylinks-list">
-        <a href="https://taraba.tech/" target="_blank" class="btn btn--family"><img
-            src="public/img/footer/trb-tech-logo-solid-white.svg" alt="taraba.tech" width="102" height="16"></a>
-        <a href="https://taraba.education/" target="_blank" class="btn btn--family"><img
-            src="public/img/footer/trb-edu-logo-solid-white.svg" alt="taraba.edu" width="108" height="16"></a>
-        <a href="https://taraba.rs/" target="_blank" class="btn btn--family"><img
-            src="public/img/footer/portal-logo-lat-solid-white-1.svg" alt="taraba portal" width="90" height="16"></a>
-        <a href="https://oakly.events/" target="_blank" class="btn btn--family"><img
-            src="public/img/footer/oakly-logo-full-color-9.svg" alt="oakly" width="63" height="16"></a>
-      </div>
+    <div class="py-8 md:px-8 md:pb-0 text-center text-trb-black2 bg-trb-grey2 md:row-span-2 self-stretch">
+        <h2 class="font-heading text-xs lg:text-sm xl:text-base font-medium">Our family</h2>
+        <div class="grid grid-cols-2 justify-center justify-items-center p-6 gap-8">
+            <a href="https://taraba.tech/" target="_blank" class="button button--family"><img
+                    src="public/img/footer/trb-tech-logo-solid-white.svg" alt="taraba.tech" width="102"
+                    height="16"></a>
+            <a href="https://taraba.education/" target="_blank" class="button button--family"><img
+                    src="public/img/footer/trb-edu-logo-solid-white.svg" alt="taraba.edu" width="108"
+                    height="16"></a>
+            <a href="https://taraba.rs/" target="_blank" class="button button--family"><img
+                    src="public/img/footer/portal-logo-lat-solid-white-1.svg" alt="taraba portal" width="90"
+                    height="16"></a>
+            <a href="https://oakly.events/" target="_blank" class="button button--family"><img
+                    src="public/img/footer/oakly-logo-full-color-9.svg" alt="oakly" width="63" height="16"></a>
+        </div>
     </div>
-    <p class="footer__copyright"><small>Copyright © 2022 Taraba. All rights reserved.</small></p>
-  </footer>
+    <p class="pb-4"><small class="text-[0.5rem] xl:text-xs font-medium text-trb-black3 dark:text-trb-grey3">Copyright © 2022 Taraba. All rights reserved.</small></p>
+</footer>
 </body>
 
 </html>

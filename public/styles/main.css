@@ -806,6 +806,10 @@ video {
   height: 1.5rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -864,12 +868,12 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-\[auto_1fr\] {
   grid-template-columns: auto 1fr;
+}
+
+.grid-cols-\[repeat\(4\2c 22\.68px\)\] {
+  grid-template-columns: repeat(4,22.68px);
 }
 
 .flex-col {
@@ -892,6 +896,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -910,6 +918,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .self-stretch {
@@ -1010,13 +1022,30 @@ video {
   line-height: 1;
 }
 
+.text-\[0\.5rem\] {
+  font-size: 0.5rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-black {
   font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-normal {
@@ -1049,6 +1078,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.decoration-current {
+  text-decoration-color: currentColor;
 }
 
 .shadow-\[0_1px_16px_rgba\(255\2c 120\2c 0\2c 0\.2\)\] {
@@ -1310,8 +1343,8 @@ video {
     grid-template-columns: 1fr 2fr auto;
   }
 
-  .md\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+  .md\:grid-rows-\[1fr_auto\] {
+    grid-template-rows: 1fr auto;
   }
 
   .md\:flex-row {
@@ -1380,6 +1413,11 @@ video {
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1410,9 +1448,19 @@ video {
     line-height: 1;
   }
 
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .xl\:leading-normal {
