@@ -64,7 +64,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+ /* @layer base {
     :root,
     :root.light {
         --bg-color: 0 0% 98%;
@@ -76,7 +76,7 @@
         --txt-color: 0 0% 98%;
         --para-txt-color: 0 0% 90%;
     }
-} */
+}  */
 
 @layer base {
     .button {
@@ -97,6 +97,10 @@
     }
 
     .input {
-        @apply w-full p-4 font-heading text-sm font-light bg-trb-grey4 border border-trb-grey1 rounded-2xl xl:text-lg leading-5
+        @apply w-full p-4 font-heading text-sm font-light bg-trb-grey4 border border-trb-grey1 rounded-2xl xl:text-lg leading-5;
+    }
+
+    .list-item-deco {
+        @apply flex items-center gap-2 before:w-[14px] before:h-[14px] before:bg-[url('/public/img/home/staticdynamic/validation-icon.SVG#checkmark')];
     }
 }
