@@ -50,12 +50,12 @@ function changeTheme() {
 
 
 // center special card on load
-// window.addEventListener("load", function () {
-//     let container = document.querySelector(".wrapper-horizontal");
-//     let middle = container.children[2];
-//     container.scrollLeft = middle.offsetLeft +
-//         middle.offsetWidth / 2 - container.offsetWidth / 2;
-// });
+window.addEventListener("load", function () {
+    let container = document.querySelector("#carousel");
+    let middle = container.children[2];
+    container.scrollLeft = middle.offsetLeft +
+        middle.offsetWidth / 2 - container.offsetWidth / 2;
+});
 
 
 
