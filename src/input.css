@@ -103,4 +103,8 @@
     .list-item-deco {
         @apply flex items-center gap-2 before:w-[14px] before:h-[14px] before:bg-[url('/public/img/home/staticdynamic/validation-icon.SVG#checkmark')];
     }
+
+    .features-deco {
+        @apply flex gap-2 font-heading text-xl font-bold leading-[3] text-trb-black3 dark:text-trb-grey3 before:w-[17.92px] before:h-[18.76px] before:bg-[url('/public/img/home/features/features-icon.svg#features')];
+    }
 }

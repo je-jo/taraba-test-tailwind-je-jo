@@ -612,6 +612,30 @@ video {
   background-image: url('/public/img/home/staticdynamic/validation-icon.SVG#checkmark');
 }
 
+.features-deco {
+  display: flex;
+  gap: 0.5rem;
+  font-family: Comfortaa, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  line-height: 3;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 40% / var(--tw-text-opacity));
+}
+
+.features-deco::before {
+  height: 18.76px;
+  width: 17.92px;
+  content: var(--tw-content);
+  background-image: url('/public/img/home/features/features-icon.svg#features');
+}
+
+:is(.dark .features-deco) {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 90% / var(--tw-text-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -929,6 +953,10 @@ video {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1051,6 +1079,10 @@ video {
 
 .to-white {
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-6 {
@@ -1534,6 +1566,10 @@ video {
 @media (min-width: 1024px) {
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:justify-center {
