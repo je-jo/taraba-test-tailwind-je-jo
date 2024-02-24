@@ -11,14 +11,10 @@
     <script src="src/js/theme-toggle.js"></script>
     <script src="src/js/script.js" defer></script>
     <title>QR code Generator - Bolt</title>
-    <!-- <style>
-        * {
-            outline: 1px solid red;
-        }
-    </style> -->
 </head>
 
-<body class="h-screen grid leading-normal bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4">
+<body
+    class="h-screen grid leading-normal bg-trb-grey4 dark:bg-trb-black2 text-trb-black2 dark:text-trb-grey4 overflow-x-hidden">
     <header
         class="flex flex-col justify-between p-6 md:flex-row md:items-center shadow-[0_1px_16px_rgba(255,120,0,0.2)] md:shadow-[0_2px_10px_rgba(45,45,45,0.1)] relative ">
         <a href="#">
@@ -89,7 +85,6 @@
                 <img src="public/img/home/qr-code-purchase.png" alt="illustration of a man scanning qr code on a bottle"
                     width="600" height="600" class="w-full max-w-[217px] md:max-w-[382px] xl:max-w-none dark:invert">
             </div>
-            <!-- widths 217, 382, 600 -->
         </div>
         <section id="generator" class="bg-trb-grey2 bg-opacity-20">
             <div class="max-w-screen-xl mx-auto pt-8 pb-12 px-[2.5%] md:py-20  [&>*+*]:mt-6">
@@ -352,119 +347,110 @@
                 </ul>
             </div>
         </section>
-        <section id="pricing" class="bg-trb-grey2 bg-opacity-30">
-            <div class="max-w-screen-xl mx-auto pt-8 pb-12 px-[2.5%] md:py-20 flow bg-red-500">
-                <div class="flow--small">
-                    <h2>Simple, transparent pricing.</h2>
-                    <p>Not sure if you need Bolt? You can sign up for your free guest account to try Bolt out.</p>
-                    <p>If you decide that Bolt could be useful and that you need something more advanced choose the plan
-                        that is
-                        right
-                        for you and your budget.</p>
+        <section id="pricing" class="bg-trb-grey2 bg-opacity-30 grid">
+            <div class="max-w-[976px] 2xl:max-w-[1295px] 2xl:w-[1295px] mx-auto pt-8 pb-12 px-[2.5%] lg:px-0 md:py-20">
+                <div class="[&>*+*]:mt-4">
+                    <h2 class="font-heading-bold text-4xl 2xl:text-5xl font-black">Simple, transparent pricing.</h2>
+                        <p class="sm:max-w-[45ch] text-sm 2xl:text-lg">Not sure if you need Bolt? You can sign up for your free guest account to try Bolt out.</p>
+                        <p class="sm:max-w-[45ch] text-sm 2xl:text-lg">If you decide that Bolt could be useful and that you need something more advanced choose the plan that is right for you and your budget.</p>
                 </div>
-                <div class="wrapper-buttons-pricing">
+                <div class="flex gap-4 mt-6 md:justify-end">
                     <button class="button button--full">Monthly</button>
                     <button class="button button--outline">Annual</button>
                     <button class="button button--outline">Lifetime</button>
                 </div>
             </div>
-            <!-- <ul id="carousel" class="flex min-w-[14rem] pt-10 pb-20 px-[2.5%] gap-6 lg:justify-center overflow-x-auto snap-x"> -->
-            <ul id="carousel" class="w-full pt-10 pb-20 px-[2.5%]" data-carousel="slide">
-                <div id="wrapper" class="w-full min-w-[14rem] flex gap-6 lg:justify-center overflow-x-auto">
-                    <li class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange4 to-white rounded-2xl"
-                        data-carousel-item>
-                        <div class="grid gap-5">
-                            <h3 class="text-sm xl:text-lg border-b border-trb-black4 uppercase">Guest</h3>
-                            <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">Free</p>
-                        </div>
-                        <ul class="text-trb-black3">
-                            <li>4 QR code types</li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                            <li><s>4 QR code types</s></li>
-                        </ul>
-                        <a href="signup.html" class="button button--full mt-8">Choose plan</a>
-                    </li>
-                    <li class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange4 to-white rounded-2xl"
-                        data-carousel-item>
-                        <div class="grid gap-5">
-                            <h3 class="text-sm xl:text-lg border-b border-trb-black4"><span
-                                    class="uppercase">Free</span>
-                                with registration</h3>
-                            <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">Free</p>
-                        </div>
-                        <ul class="text-trb-black3">
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                        </ul>
-                        <a href="signup.html" class="button button--full mt-8">Choose plan</a>
-                    </li>
-                    <li class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange4 to-white rounded-2xl"
-                        data-carousel-item="active">
-                        <div class="grid gap-5">
-                            <h3 class="text-sm xl:text-lg border-b border-trb-black4 uppercase">Profesional Pro</h3>
-                            <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">$5</p>
-                        </div>
-                        <ul class="text-trb-black3">
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                        </ul>
-                        <a href="signup.html" class="button button--full mt-8">Choose plan</a>
-                    </li>
-                    <li class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange4 to-white rounded-2xl"
-                        data-carousel-item>
-                        <div class="grid gap-5">
-                            <h3 class="text-sm xl:text-lg border-b border-trb-black4 uppercase">Business</h3>
-                            <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">$15</p>
-                        </div>
-                        <ul class="text-trb-black3">
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                            <li>4 QR code types</li>
-                        </ul>
-                        <a href="signup.html" class="button button--full mt-8">Choose plan</a>
-                    </li>
-                </div>
-
+            <ul class="min-w-[226px] flex gap-6 lg:justify-center overflow-x-auto pt-10 pb-20 px-[2.5%]">
+                <li
+                    class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange5 to-white rounded-2xl">
+                    <div class="grid gap-5">
+                        <h3 class="font-heading text-sm xl:text-lg border-b border-trb-black4 uppercase">Guest</h3>
+                        <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">Free</p>
+                    </div>
+                    <ul class="text-trb-black3">
+                        <li>4 QR code types</li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                        <li><s>4 QR code types</s></li>
+                    </ul>
+                    <a href="signup.html" class="button button--full mt-8">Choose plan</a>
+                </li>
+                <li
+                    class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange5 to-white rounded-2xl">
+                    <div class="grid gap-5">
+                        <h3 class="font-heading text-sm xl:text-lg border-b border-trb-black4"><span class="uppercase">Free</span>
+                            with registration</h3>
+                        <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">Free</p>
+                    </div>
+                    <ul class="text-trb-black3">
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                    </ul>
+                    <a href="signup.html" class="button button--full mt-8">Choose plan</a>
+                </li>
+                <li
+                    class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange4 to-white rounded-2xl relative before:content-['Most_popular_plan'] before:absolute before:-top-10 before:justify-self-center before:p-4 before:text-center before:font-heading before:text-base before:text-trb-grey0 before:rounded-2xl before:bg-gradient-to-b before:from-trb-orange4 before:to-white before:-z-10">
+                    <div class="grid gap-5">
+                        <h3 class="font-heading text-sm xl:text-lg border-b border-trb-black4 uppercase">Profesional Pro</h3>
+                        <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">$5</p>
+                    </div>
+                    <ul class="text-trb-black3">
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                    </ul>
+                    <a href="signup.html" class="button button--full mt-8">Choose plan</a>
+                </li>
+                <li
+                    class="basis-56 2xl:basis-80 shrink-0 grid py-8 px-5 gap-2 xl:gap-4 bg-gradient-to-b from-trb-orange5 to-white rounded-2xl">
+                    <div class="grid gap-5">
+                        <h3 class="font-heading text-sm xl:text-lg border-b border-trb-black4 uppercase">Business</h3>
+                        <p class="font-heading text-4xl xl:text-5xl font-black text-trb-black2">$15</p>
+                    </div>
+                    <ul class="text-trb-black3">
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                        <li>4 QR code types</li>
+                    </ul>
+                    <a href="signup.html" class="button button--full mt-8">Choose plan</a>
+                </li>
             </ul>
-
         </section>
     </main>
     <footer

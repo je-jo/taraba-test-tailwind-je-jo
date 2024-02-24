@@ -15,6 +15,7 @@ module.exports = {
         'trb-orange1': 'hsl(28, 100%, 50%)', //#FF7800
         'trb-orange3': 'hsl(31, 100%, 61%)', //#FFA039
         'trb-orange4': 'hsl(31, 100%, 80%)', //#FFCF9B
+        'trb-orange5': 'hsl(18, 100%, 88%)', //#FFD4C2
         'trb-black2': 'hsl(0, 0%, 18%)', //#2D2D2D
         'trb-black3': 'hsl(0, 0%, 40%)', //#666666
         'trb-black4': 'hsl(0, 0%, 60%)', //#999898
